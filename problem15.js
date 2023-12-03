@@ -4,7 +4,7 @@ function latticePaths(gridSize)
 	let n = gridSize * 2
 	let k = gridSize
 
-	for (let i = 1; i < Math.min(k, n - k) + 1; i++)
+	for (let i = 1; i <= k; i++)
 		result *= (n + 1 - i) / i;
 	return result;
 }
